@@ -12,12 +12,12 @@
   "rebaseWhen": "behind-base-branch",
   "packageRules": [
     {
-      "managers": ["npm"],
-      "updateTypes": ["major"],
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["major"],
       "enabled": false
     },
     {
-      "paths": ["npm/**", "yarn/**"],
+      "matchPaths": ["npm/**", "yarn/**"],
       "additionalBranchPrefix": "{{baseDir}}-",
       "commitMessageSuffix": "({{baseDir}})"
     }
